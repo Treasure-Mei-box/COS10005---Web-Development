@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="HTML (Part-1 - Content - Form)">
+    <META name="author" content="Yadanar Theint">
+    <title>Web Development Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Unit Delivery Survey</h1>
+    <form id ="survey" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+        <fieldset>
+            <legend>Which browser do you know how to use? (Check all that applies)</legend>
+            <p>
+                <input type="checkbox" name="chrome" id="chrome" value="Chrome">
+                <label for="chrome">Chrome</label>
+                <br>
+
+                <input type="checkbox" name="firefox" id="firefox" value="Firefox">
+                <label for="firefox">Firefox</label>
+                <br>
+
+                <input type="checkbox" name="iexplorer" id="iexplorer" value="Interner Explorer">
+                <label for="iexplorer">Internet Explorer</label>
+                <br>
+
+                <input type="checkbox" name="safari" id="safari" value="Safari">
+                <label for="safari">Safari</label>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Which text editor do you know how to use? (Check all that applies)</legend>
+            <p>
+                <input type="checkbox" name="komodo" id="komodo" value="Komodo">
+                <label for="komodo">Komodo</label>
+                <br>
+
+                <input type="checkbox" name="notepad" id="notepad" value="Notepad">
+                <label for="notepad">Notepad++</label>
+                <br>
+
+                <input type="checkbox" name="subtext" id="subtext" value="Sublime Text">
+                <label for="subtext">Sublime Text</label>
+                <br>
+
+                <input type="checkbox" name="wrangler" id="wrangler" value="wrangler">
+                <label for="wrangler">Wrangler</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <a href="survey02.html">Previous</a>
+            <a href="survey04.html">Next</a>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+
+</html>
