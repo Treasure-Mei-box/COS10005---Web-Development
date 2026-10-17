@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="A CSS photo slideshow and an original video showing my student life in Malaysia.">
+    <meta name="keywords" content="student video, slideshow, Malaysia, student life, HTML5 video, gallery">
+    <meta name="author" content="Yadanar Theint">
+    <title>Photo Slideshow &amp; My Video | Student Life</title>
+    <link rel="stylesheet" href="style/desktop.css">
+    <link rel="stylesheet" href="style/mobile.css" media="screen and (max-width: 600px)">
+</head>
+
+<body>
+    <header>
+        <h1>My Photos &amp; My Video</h1>
+        <p>A CSS slideshow of my photographs and the original video I recorded about student life in Malaysia</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="suburb.html">My Suburb</a>
+        <a href="food.html">Food &amp; Cafés</a>
+        <a href="activities.html">Activities</a>
+        <a href="animations.html" aria-current="page">My Media</a>
+    </nav>
+
+    <main>
+        <section aria-labelledby="slideshow-title">
+            <h2 id="slideshow-title">Photo Slideshow of My Student Life</h2>
+            <p>
+                The slideshow below brings together nine photographs from my own collection. It moves from my
+                daily routine in Malaysia to the places I travel to. Each photo fades into the next one
+                automatically, and the filled dot under the frame follows the photo that is currently on
+                screen. The animation is made with CSS only.
+            </p>
+
+            <figure class="slideshow">
+                <div class="slideshow-stage">
+                    <div class="slide" style="--i: 0">
+                        <img src="images/profile.jpg" alt="My personal photograph as a student in Malaysia">
+                        <p class="slide-caption">Photo 1 &mdash; Me, Yadanar Theint, a student living in Malaysia</p>
+                    </div>
+
+                    <div class="slide" style="--i: 1">
+                        <img src="images/city.jpg" alt="The city streets and skyline I travel through each day">
+                        <p class="slide-caption">Photo 2 &mdash; The city I commute and study around</p>
+                    </div>
+
+                    <div class="slide" style="--i: 2">
+                        <img src="images/trx.jpg" alt="The high-rise buildings of the TRX district in Kuala Lumpur">
+                        <p class="slide-caption">Photo 3 &mdash; TRX, the district I pass on my way to class</p>
+                    </div>
+
+                    <div class="slide" style="--i: 3">
+                        <img src="images/cafe.jpg" alt="My usual café, with a drink on the table where I revise">
+                        <p class="slide-caption">Photo 4 &mdash; My go-to café before my 8AM classes</p>
+                    </div>
+
+                    <div class="slide" style="--i: 4">
+                        <img src="images/inti.jpg" alt="My university campus building and walkways">
+                        <p class="slide-caption">Photo 5 &mdash; My university campus</p>
+                    </div>
+
+                    <div class="slide" style="--i: 5">
+                        <img src="images/ipoh.jpg" alt="A street view of Ipoh in the state of Perak">
+                        <p class="slide-caption">Photo 6 &mdash; Ipoh, a favourite weekend trip</p>
+                    </div>
+
+                    <div class="slide" style="--i: 6">
+                        <img src="images/family.jpg" alt="My family spending time together at home">
+                        <p class="slide-caption">Photo 7 &mdash; My family, who support my studies</p>
+                    </div>
+
+                    <div class="slide" style="--i: 7">
+                        <img src="images/kook.JPG" alt="My clingy dopamine">
+                        <p class="slide-caption">Photo 8 &mdash; My clingy dopamine </p>
+                    </div>
+
+                    <div class="slide" style="--i: 8">
+                        <img src="images/taiwan.jpg" alt="A holiday photograph taken in Taiwan">
+                        <p class="slide-caption">Photo 9 &mdash; Taiwan, a break away from study</p>
+                    </div>
+                </div>
+
+                <div class="slide-dots" aria-hidden="true">
+                    <span class="slide-dot" style="--i: 0"></span>
+                    <span class="slide-dot" style="--i: 1"></span>
+                    <span class="slide-dot" style="--i: 2"></span>
+                    <span class="slide-dot" style="--i: 3"></span>
+                    <span class="slide-dot" style="--i: 4"></span>
+                    <span class="slide-dot" style="--i: 5"></span>
+                    <span class="slide-dot" style="--i: 6"></span>
+                    <span class="slide-dot" style="--i: 7"></span>
+                    <span class="slide-dot" style="--i: 8"></span>
+                </div>
+
+                <figcaption>Nine photographs from my personal collection, shown one after another.</figcaption>
+            </figure>
+        </section>
+
+        <div class="two-column">
+            <section aria-labelledby="video-title">
+                <h2 id="video-title">My Original Student Video</h2>
+                <p>
+                    The video below is 80% my own recording and editing with some videos that my friend took of me. It uses the HTML5 <strong>&lt;video&gt;</strong>
+                    element, so it plays inside the page without leaving the browser.
+                </p>
+
+                <figure>
+                    <div class="video-container">
+                        <video controls preload="metadata" playsinline width="800" height="450"
+                            aria-label="My original student life video">
+                            <source src="images/edited.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video. You can download the video file instead.
+                        </video>
+                    </div>
+                    <figcaption>My original student life video</figcaption>
+                </figure>
+            </section>
+
+            <aside>
+                <h2>How This Page Is Arranged</h2>
+                <p>
+                    The top half of the page is a <strong>photo slideshow</strong> built with HTML and CSS
+                    only. The <strong>@keyframes</strong> rule fades each photograph in and out, and
+                    <strong>animation-delay</strong> decides how long each photo stays on screen.
+                </p>
+                <p>
+                    The bottom half is the <strong>video player</strong>. The video file is
+                    edited using the short videos that I have taken randomly recorded myself and some videos that my friend took of me.
+                </p>
+                <p>
+                    Use the gallery further down the page if you want to see every photograph on its own
+                    with its full caption.
+                </p>
+            </aside>
+        </div>
+
+        <section aria-labelledby="gallery-title">
+            <h2 id="gallery-title">The Same Photographs in a Gallery</h2>
+            <p>
+                Every photograph in the slideshow is listed below with a short description, so each image is
+                also visible on its own.
+            </p>
+
+            <div class="photo-grid">
+                <figure>
+                    <img src="images/profile.jpg" alt="My personal photograph as a student in Malaysia">
+                    <figcaption>Photo 1 &mdash; Me, Yadanar Theint, a student living in Malaysia</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/city.jpg" alt="The city streets and skyline I travel through each day">
+                    <figcaption>Photo 2 &mdash; The city I commute and study around</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/trx.jpg" alt="The high-rise buildings of the TRX district in Kuala Lumpur">
+                    <figcaption>Photo 3 &mdash; TRX, the district I pass on my way to class</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cafe.jpg" alt="My usual café, with a drink on the table where I revise">
+                    <figcaption>Photo 4 &mdash; My go-to café before my 8AM classes</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/inti.jpg" alt="My university campus building and walkways">
+                    <figcaption>Photo 5 &mdash; My university campus</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ipoh.jpg" alt="A street view of Ipoh in the state of Perak">
+                    <figcaption>Photo 6 &mdash; Ipoh, a favourite weekend trip</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/family.jpg" alt="My family spending time together at home">
+                    <figcaption>Photo 7 &mdash; My family, who support my studies</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/kook.JPG" alt="My clingy dopamine">
+                    <figcaption>Photo 8 &mdash; My clingy dopamine</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/taiwan.jpg" alt="A holiday photograph taken in Taiwan">
+                    <figcaption>Photo 9 &mdash; Taiwan, a break away from study</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Yadanar Theint | <a href="index.html">Back to Home</a></p>
+    </footer>
+</body>
+
+</html>

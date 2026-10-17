@@ -1,0 +1,11 @@
+@media screen and (min-width: 601px) {
+    section {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        width: 90%;
+    }
+}

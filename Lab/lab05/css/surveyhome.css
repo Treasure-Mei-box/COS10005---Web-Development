@@ -1,0 +1,112 @@
+/* Logo and slogan */
+header {
+    color: white;
+    background-color: navy;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+header img {
+    height: 120px;
+}
+
+header slogan {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    margin: 20px 0px;
+}
+
+/* Main content and advertisement sidebar container */
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Main content */
+main {
+    flex: 3;
+}
+
+/* Advertisement sidebar */
+aside {
+    flex: 1;
+    font-size: 14px;
+    font-style: italic;
+    color: green;
+    background-color: lightgrey;
+    padding: 1em;
+}
+
+/* Navigation list */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Navigation items */
+nav li {
+    flex: 1;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 0.2em 0.6em;
+}
+
+nav li + li {
+    border-left: 1px solid white;
+}
+
+/* Navigation links */
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation link mouse over */
+nav li:hover {
+    background-color: brown;
+}
+
+/* Articles */
+article {
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: lightgrey;
+    box-shadow: 3px 3px 3px 2px #797979;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+/* Advertisements */
+address {
+    color: green;
+    background-color: lightblue;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Article headings */
+article h1,
+article h2 {
+    text-shadow: #aaa 2px 2px 2px;
+}
+
+/* Footer */
+footer {
+    margin-top: 2em;
+    background-color: navy;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+/* Step 5.1: Desktop Base Style */
+body {
+    color: red;
+}
+
+/* Step 6.2 */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+/* Step 6.3: Mobile Styles from Step 5.2 */
+@media screen and (max-width: 480px) {
+    body {
+        color: black; /* Overrides the red text color on mobile */
+    }
+
+    form {
+        font-size: 200%; /* Increase the font size in the form to 200% */
+    }
+
+    h1 {
+        text-align: center; /* Center the text for all <h1> elements */
+    }
+
+    h2 {
+        font-size: 40px; /* Change the font size of <h2> to 40 pixels */
+        margin-bottom: 0; /* Remove the bottom margin of <h2> */
+    }
+
+    input {
+        width: 100%; /* Make all the <input> elements occupy the entire width */
+    }
+
+    p {
+        margin: 0; /* Remove all margins around all <p> elements */
+    }
+
+    input[type="radio"] {
+        width: 15%; /* Set width of all radio buttons to 15% */
+    }
+
+    input[type="submit"],
+    .button {
+        width: 40%; /* Set width of all buttons to 40% */
+    }
+
+    div {
+        text-align: center; /* Center the test button by centering the appropriate <div> */
+    }
+}

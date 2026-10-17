@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My favourite café or restaurant recommendation, including my favourite food and drink in Malaysia.">
+    <meta name="keywords" content="Malaysia, cafe, restaurant, favourite food, student recommendation">
+    <meta name="author" content="Yadanar Theint">
+    <title>My Café Recommendation | Student Life</title>
+    <link rel="stylesheet" href="style/desktop.css">
+    <link rel="stylesheet" href="style/mobile.css" media="screen and (max-width: 600px)">
+</head>
+
+<body>
+    <header>
+        <h1>My Favourite Café Recommendation</h1>
+        <p>A food and drink recommendation for a friend visiting Malaysia</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="suburb.html">My Suburb</a>
+        <a href="food.html" aria-current="page">Food &amp; Cafés</a>
+        <a href="activities.html">Activities</a>
+        <a href="animations.html">My Media</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>My Recommendation to a Friend</h2>
+            <p class="highlight">
+                If you visited my area, I would recommend <strong>Fairy Milk</strong> dessert shop. It is famous for its bingsu.
+                After a long tiring day, me and my friend used to go here to increase the Dopamine Level again.
+            </p>
+
+            <div class="placeholder-box">
+                <h3>Details of Fairy Milk Dessert Shop</h3>
+                <ul>
+                    <li><strong>Café or restaurant name:</strong>Fairy Milk Dessert</li>
+                    <li><strong>Location:</strong>SS15</li>
+                    <li><strong>My favourite dish:</strong>Signature Bingsu</li>
+                    <li><strong>My favourite drink:</strong>Passion Soda</li>
+                    <li><strong>Approximate price:</strong> 25 - 45RM</li>
+                </ul>
+            </div>
+        </article>
+
+        <section aria-labelledby="favourites-title">
+            <h2 id="favourites-title">My Favourite Food and Drink</h2>
+            <p>
+                My favourite goto place whenever I got no idea to ead is <strong>Peppercorn Cafe</strong>, and my usual meal there is
+                <strong>Breakfast/Lunch set</strong>. I would order these again because I enjoy the
+                taste,portion,healthy meal and I would recommend them to a friend who wants a simple student meal.
+            </p>
+            <p>
+                The food is suitable for students because the prices are affordable and the portions are
+                enough for a normal meal while everything includes like meal,drinks(coffee)and even small portion of dessert.The restaurant is also close to public transport and other places
+                that a visitor may want to see.
+            </p>
+        </section>
+
+        <section aria-labelledby="photo-title">
+            <h2 id="photo-title">Photo of the Café or Restaurant</h2>
+            <figure>
+                <img class="image" src="images/fairymailk.jpg" alt="my favourite dessert shop in SS15">
+                <figcaption>My favourite dessert shop in SS15</figcaption>
+            </figure>
+
+            <figure>
+                <img class="image" src="images/ppc.jpg" alt="my favourite goto meal shop in SS15">
+                <figcaption>My favourite healthy meals cafe</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="survey-title">
+            <h2 id="survey-title">Recommend Something to Me</h2>
+            <form action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="post">
+                <label for="name">Your name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="food">Your favourite food or drink:</label>
+                <input type="text" id="food" name="food" required>
+
+                <label for="type">Preferred place:</label>
+                <select id="type" name="type">
+                    <option value="cafe">Cafe</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="food-court">Food court</option>
+                </select>
+
+                <label for="message">Your recommendation for me:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Yadanar Theint | <a href="index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>

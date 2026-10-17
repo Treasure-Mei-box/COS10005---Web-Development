@@ -1,0 +1,61 @@
+form {
+	width: 40em;							/* set the width to 40em */
+}
+
+/* Style text input rows using Flexbox */
+.textinput {
+	display: flex;							/* use flexbox */
+	align-items: center;						/* vertically align items in the centre */
+	margin: 10px;							/* set margin to 10px */
+}
+
+/* Style the labels and input by aligning all input fields */
+.textinput label {
+	text-align: right;							/* align text to right */
+	width: 10em;							/* set width to 10em */
+	margin-right: 1em;							/* set right margin to 1em */
+}
+
+input {
+	width: 50%;							/* set width to 50% */
+}
+
+/* Style radio button input */
+.radioinput fieldset {
+	border-radius: 1.5px;							/* keep a visible border */
+	margin: 10px;							/* set margin to 10px */
+}
+
+.radioinput legend {
+	text-align: left;							/* align text to left */
+}
+
+.radioinput p {
+	display: flex;							/* use flexbox */
+	align-items: center;						/* vertically align items in the centre */
+	margin: 5px;							/* set margin to 5px */
+}
+
+.radioinput label  {
+	text-align: right;							/* align text to right */
+	width: 10em;							/* set width to 10em */
+	margin-right: 1em;							/* set right margin to 1em */
+}
+
+.radioinput input  {
+	width: auto;							/* set width to auto */
+}
+
+/* Style button input note that declarations are inherited */
+.buttoninput {
+	margin: 10px;							/* set margin to 10px */
+}
+
+.buttoninput input {
+	width: 20em;							/* set width to 20em */
+}
+
+input[type=text]:focus , input[type=password]:focus
+{
+background-color:yellow
+}
