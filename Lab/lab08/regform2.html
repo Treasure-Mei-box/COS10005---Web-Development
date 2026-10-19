@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Registration Form" />
+	<meta name="author"      content="Yadanar Theint" />
+
+	<!-- (1) Link to desktop CSS file named desktop.css -->
+	<link href="desktop.css" rel="stylesheet" media="screen and (min-device-width:481px)"/>
+	<!-- (2) Link to modal window CSS file named modal.css -->
+	<link href="modal.css" rel="stylesheet"/>
+	<!-- (3) Link to modal window JavaScript file named modal.js -->
+	<script src ="modal.js"></script>
+
+	<title>Web Development Modal Demo</title>
+</head>
+<body>
+	<!-- (4) Write the overlay HTML <div> element, identify it as "scrnOverlay" -->
+	<div id="scrnOverlay"></div>
+
+	<form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+		<fieldset>
+			<legend>Account Information</legend>
+
+			<div class="textinput">
+				<label for="sid">User ID</label>
+				<input id="sid" type="text" name="id" />
+			</div>
+
+			<div class="textinput">
+				<label for="pwd1">Password</label>
+				<input id="pwd1" type="password" name="pwd1" />
+
+				<!-- (5) Write HTML code for the Password Rule button -->
+				<a href="#" id="pwdHelpBtn" class="button">Password Rule</a>
+
+				<!-- (6) Write HTML code for Password Rule List -->
+				<div id="pwdHelpWin" class="window">
+					<p>Password must satisfy the following:</p>
+					<ul>
+						<li>must be 8 characters long</li>
+						<li>must contain at least 1 number</li>
+						<li>must contain both upper and lower case letters</li>
+					</ul>
+					<a href="#" id="pwdHelpClose" class="button">Close</a>
+				</div>
+			</div>
+
+			<div class="textinput">
+				<label for="pwd2">Retype Password</label>
+				<input id="pwd2" type="password" name="pwd2" />
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>User Information</legend>
+
+			<div class="textinput">
+				<label for="name">Name</label>
+				<input id="name" type="text" name="name" />
+			</div>
+
+			<div class="radioinput">
+				<span class="radiolabel">Gender</span>
+
+				<input id="genm" type="radio" name="gender" value="M" />
+				<label for="genm">Male</label>
+
+				<input id="genf" type="radio" name="gender" value="F" />
+				<label for="genf">Female</label>
+			</div>
+		</fieldset>
+
+		<div class="buttoninput">
+			<input type="submit" value="Test Registration Register" />
+		</div>
+	</form>
+</body>
+</html>
