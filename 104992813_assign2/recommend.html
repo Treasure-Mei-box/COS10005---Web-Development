@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="GUSTIO helps families, couples, professionals and tourists discover restaurants, get recommendations and reserve a table online.">
+        <title>Recommendations | GUSTIO</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <!-- Google Fonts preconnect for faster font rendering -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- One external stylesheet and one external script are shared by every page -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body id="top">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <!-- ===== Site header and main navigation (identical on every page) ===== -->
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="index.html#top">
+                    <img src="images/logo.png" alt="Gustio logo" width="1250" height="1250">
+                    <span>GUSTIO</span>
+                </a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+                <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="recommend.html" class="active" aria-current="page">Recommendations</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+            <section class="page-title-bar" aria-labelledby="page-title">
+                <div class="container">
+                    <h1 id="page-title">Restaurant recommendations</h1>
+                    <p class="page-intro">Answer a few quick questions and we will suggest the restaurants that suit you best. Choose one to reserve.</p>
+                </div>
+            </section>
+            <section class="page-section" aria-labelledby="form-title">
+                <div class="container">
+                    <!-- Preferences form: handled by JavaScript (no data is sent to a server) -->
+                    <form id="recommend-form" class="form-card" action="recommend.html" method="get" novalidate>
+                        <h2 id="form-title">Tell us what you like</h2>
+                        <div id="form-summary" class="error-summary" role="alert" tabindex="-1" hidden></div>
+                        <div class="field">
+                            <label for="category">Cuisine category</label>
+                            <select id="category" name="category" required aria-describedby="category-error">
+                                <option value="">Choose a cuisine category</option>
+                                <option value="any">Any</option>
+                                <option value="arabic">Arabic</option>
+                                <option value="malaysian">Malaysian</option>
+                                <option value="japanese">Japanese</option>
+                                <option value="cafe">Cafe / Dine to Desserts</option>
+                                <option value="desserts">Desserts</option>
+                                <option value="korean">Korean</option>
+                            </select>
+                            <p class="error" id="category-error"></p>
+                        </div>
+                        <div class="field">
+                            <label for="diet">Dietary preference</label>
+                            <select id="diet" name="diet" required aria-describedby="diet-error">
+                                <option value="">Choose a dietary preference</option>
+                                <option value="none">None</option>
+                                <option value="halal">Halal</option>
+                                <option value="vegetarian">Vegetarian</option>
+                                <option value="vegan">Vegan</option>
+                            </select>
+                            <p class="error" id="diet-error"></p>
+                        </div>
+                        <div class="field">
+                            <label for="budget">Budget per person</label>
+                            <select id="budget" name="budget" required aria-describedby="budget-error">
+                                <option value="">Choose a budget range</option>
+                                <option value="low">Up to RM 50</option>
+                                <option value="medium">RM 51 - RM 100</option>
+                                <option value="high">RM 101 - RM 200</option>
+                                <option value="luxury">Above RM 200</option>
+                            </select>
+                            <p class="error" id="budget-error"></p>
+                        </div>
+                        <fieldset class="field-group" id="purpose" aria-describedby="purpose-error">
+                            <legend>Dining purpose</legend>
+                            <div class="choice-row">
+                                <div class="choice">
+                                    <input type="radio" id="purpose-family" name="purpose" value="family" required>
+                                    <label for="purpose-family">Family</label>
+                                </div>
+                                <div class="choice">
+                                    <input type="radio" id="purpose-date" name="purpose" value="date">
+                                    <label for="purpose-date">Date</label>
+                                </div>
+                                <div class="choice">
+                                    <input type="radio" id="purpose-business" name="purpose" value="business">
+                                    <label for="purpose-business">Business</label>
+                                </div>
+                            </div>
+                            <p class="error" id="purpose-error"></p>
+                        </fieldset>
+                        <button type="submit" class="btn">Find my restaurants</button>
+                    </form>
+                    <!-- Results are written here by script.js -->
+                    <div id="recommend-results" class="results" aria-live="polite" hidden></div>
+                </div>
+            </section>
+            <section class="page-section alt" aria-labelledby="how-title">
+                <div class="container">
+                    <h2 id="how-title">How the matching works</h2>
+                    <ul>
+                        <li><strong>Cuisine category:</strong> choose a specific cuisine, or pick "Any" to see all types. A restaurant must match your chosen category.</li>
+                        <li><strong>Diet:</strong> a restaurant must cater for your dietary preference.</li>
+                        <li><strong>Budget:</strong> restaurants whose average spend sits inside your range score highest; those that only partly overlap score lower; those outside it are left out.</li>
+                        <li><strong>Purpose:</strong> restaurants that suit family, date or business dining earn extra points.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- ===== Site footer ===== -->
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-brand-header">
+                        <a href="index.html#top" class="footer-logo-link" aria-label="Gustio Home">
+                            <img src="images/logo.png" alt="Gustio logo" class="footer-logo" width="1250" height="1250">
+                        </a>
+                        <h2>GUSTIO</h2>
+                    </div>
+                    <p>Discover. Decide. Dine With JOY. A restaurant discovery and reservation platform for Malaysia.</p>
+                </div>
+                <div>
+                    <h2>Explore</h2>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="recommend.html">Recommendations</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:support@gustio.com">support@gustio.com</a></p>
+                    <p>Support Hour - 9:00 am to 9:00 pm</p>
+                </div>
+                <p class="footer-note">&copy; 2026 GUSTIO. A website for COS10005 Web Development, Assignment 2. Image references are listed in Readme.txt.</p>
+            </div>
+        </footer>
+    </body>
+</html>

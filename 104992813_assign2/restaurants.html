@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="GUSTIO helps families, couples, professionals and tourists discover restaurants, get recommendations and reserve a table online.">
+        <title>Restaurants | GUSTIO</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <!-- Google Fonts preconnect for faster font rendering -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- One external stylesheet and one external script are shared by every page -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body id="top">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <!-- ===== Site header and main navigation (identical on every page) ===== -->
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="index.html#top">
+                    <img src="images/logo.png" alt="Gustio logo" width="1250" height="1250">
+                    <span>GUSTIO</span>
+                </a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+                <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="restaurants.html" class="active" aria-current="page">Restaurants</a></li>
+                        <li><a href="recommend.html">Recommendations</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+            <section class="page-title-bar" aria-labelledby="page-title">
+                <div class="container">
+                    <h1 id="page-title">Our restaurants</h1>
+                    <p class="page-intro">Six hand-picked places to eat. Compare cuisines, signature dishes, average prices and reservation deposits, then book your table.</p>
+                </div>
+            </section>
+            <!-- Restaurant listing: one article per restaurant -->
+            <section class="page-section" aria-label="Restaurant listing">
+                <div class="container restaurant-list">
+                    <article class="restaurant-card" id="orchid" aria-labelledby="orchid-title">
+                        <img src="images/restaurant1.jpg" alt="ORCHID HOUSE Restaurant in Kampung Baru, KLCC" width="800" height="520" loading="lazy">
+                        <div>
+                            <h2 id="orchid-title">ORCHID Restaurant</h2>
+                            <p><span class="chip">Arabic (Halal)</span><span class="chip">Halal</span></p>
+                            <p>ORCHID HOUSE Restaurant is an Arabic food restaurant located in Kampung Baru in the KLCC area. The menu is fully halal, portions are generous, and the friendly team happily arranges large tables for birthdays, reunions and relaxed weekday business lunches. Warm lantern lighting and comfortable seating make it easy to linger over shared mezze, while group set menus keep bigger bookings simple.</p>
+                            <dl class="facts">
+                                <div>
+                                    <dt>Cuisine type</dt>
+                                    <dd>Arabic (Halal)</dd>
+                                </div>
+                                <div>
+                                    <dt>Average price</dt>
+                                    <dd>RM 25 - RM 45 per person</dd>
+                                </div>
+                                <div>
+                                    <dt>Reservation deposit</dt>
+                                    <dd>RM 20.00</dd>
+                                </div>
+                                <div>
+                                    <dt>Best for</dt>
+                                    <dd>Family, dates & reunions</dd>
+                                </div>
+                                <div>
+                                    <dt>Located In</dt>
+                                    <dd>Kampung Baru</dd>
+                                </div>
+                            </dl>
+                            <table class="dish-table">
+                                <caption>Signature dishes</caption>
+                                <thead>
+                                    <tr><th scope="col">Dish</th><th scope="col">Price</th></tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>Shawama </td><td>RM 15.00</td></tr>
+                                <tr><td>Briyani with Lamb</td><td>RM 22.00</td></tr>
+                                <tr><td>Shawama Rice Lunch Set with Drink</td><td>RM 18.00</td></tr>
+                                </tbody>
+                            </table>
+                            <div class="button-row">
+                                <a class="btn" href="reservation.html?restaurant=orchid">Reserve a table</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="restaurant-card" id="nando" aria-labelledby="nando-title">
+                        <img src="images/restaurant2.jpg" alt="Nando's flame-grilled chicken at the Sunway Pyramid branch" width="800" height="520" loading="lazy">
+                        <div>
+                            <h2 id="nando-title">Nando's</h2>
+                            <p><span class="chip">Malaysian Food (Halal)</span><span class="chip">Malaysian</span><span class="chip">Grilled Chicken</span></p>
+                            <p>Famous for a reason, Nando's delivers perfectly flame-grilled PERi-PERi chicken that you can customise to your own spice tolerance, from lemon and herb to extra hot. The Sunway Pyramid branch is a consistent go-to for great food and easy vibes, with quick counter service, family-friendly booths and sharing platters that keep both casual lunches and big group dinners simple.</p>
+                            <dl class="facts">
+                                <div>
+                                    <dt>Cuisine type</dt>
+                                    <dd>Malaysian Food</dd>
+                                </div>
+                                <div>
+                                    <dt>Average price</dt>
+                                    <dd>RM 22 - RM 55 per person</dd>
+                                </div>
+                                <div>
+                                    <dt>Reservation deposit</dt>
+                                    <dd>RM 20.00</dd>
+                                </div>
+                                <div>
+                                    <dt>Best for</dt>
+                                    <dd>Family, Reunions</dd>
+                                </div>
+                                <div>
+                                    <dt>Located In</dt>
+                                    <dd>Sunway Pyramid</dd>
+                                </div>
+                            </dl>
+                            <table class="dish-table">
+                                <caption>Signature dishes</caption>
+                                <thead>
+                                    <tr><th scope="col">Dish</th><th scope="col">Price</th></tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>PERi-PERi chicken</td><td>RM 22.00</td></tr>
+                                <tr><td>All Time Lunch set</td><td>RM 25.00</td></tr>
+                                </tbody>
+                            </table>
+                            <div class="button-row">
+                                <a class="btn" href="reservation.html?restaurant=nando">Reserve a table</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="restaurant-card" id="hiro" aria-labelledby="hiro-title">
+                        <img src="images/restaurant3.jpg" alt="Sushi Hiro restaurant frontage at USJ Taipan" width="800" height="520" loading="lazy">
+                        <div>
+                            <h2 id="hiro-title">Sushi Hiro</h2>
+                            <p><span class="chip">Japanese</span></p>
+                            <p>Fresh, beautiful and flavour-packed, Sushi Hiro elevates Japanese dining with premium sashimi, signature rolls and its famous staircase presentation platters. Every plate is carefully prepared, which makes the restaurant a favourite for celebrations and special nights out. Prices sit at the premium end, but the quality of the fish and the attentive service justify the splurge for any sushi lover.</p>
+                            <dl class="facts">
+                                <div>
+                                    <dt>Cuisine type</dt>
+                                    <dd>Japanese (Non-Halal)</dd>
+                                </div>
+                                <div>
+                                    <dt>Average price</dt>
+                                    <dd>RM 25 - RM 90 per person</dd>
+                                </div>
+                                <div>
+                                    <dt>Reservation deposit</dt>
+                                    <dd>RM 30.00</dd>
+                                </div>
+                                <div>
+                                    <dt>Best for</dt>
+                                    <dd>Date night, business, family & reunions</dd>
+                                </div>
+                                <div>
+                                    <dt>Located In</dt>
+                                    <dd>Taipan</dd>
+                                </div>
+                            </dl>
+                            <table class="dish-table">
+                                <caption>Signature dishes</caption>
+                                <thead>
+                                    <tr><th scope="col">Dish</th><th scope="col">Price</th></tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>Salmon Aburi Sushi Set</td><td>RM 58.00</td></tr>
+                                <tr><td>Chirashi Bowl</td><td>RM 65.00</td></tr>
+                                <tr><td>Wagyu Don</td><td>RM 78.00</td></tr>
+                                </tbody>
+                            </table>
+                            <div class="button-row">
+                                <a class="btn" href="reservation.html?restaurant=hiro">Reserve a table</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="restaurant-card" id="upstairs" aria-labelledby="upstairs-title">
+                        <img src="images/restaurant4.jpg" alt="Upstairs Cafe cosy interior in SS12" width="800" height="520" loading="lazy">
+                        <div>
+                            <h2 id="upstairs-title">Upstairs Cafe</h2>
+                            <p><span class="chip">Cafe</span><span class="chip">Dine to Desserts</span></p>
+                            <p>A cozy neighborhood staple tucked away in SS12, Upstairs Café is your go-to spot for satisfying comfort food followed by indulgence. From hearty pastas and savory mains to their legendary slice-of-heaven cakes, it's the ultimate place to relax, dine, and end on a sweet note. The relaxed coffee-house setting also works well for catch-ups, study sessions and unhurried dates.</p>
+                            <dl class="facts">
+                                <div>
+                                    <dt>Cuisine type</dt>
+                                    <dd>Dine to Desserts</dd>
+                                </div>
+                                <div>
+                                    <dt>Average price</dt>
+                                    <dd>RM 13 - RM 45 per person</dd>
+                                </div>
+                                <div>
+                                    <dt>Reservation deposit</dt>
+                                    <dd>RM 15.00</dd>
+                                </div>
+                                <div>
+                                    <dt>Best for</dt>
+                                    <dd>Dates & reunions</dd>
+                                </div>
+                                <div>
+                                    <dt>Located In</dt>
+                                    <dd>SS12</dd>
+                                </div>
+                            </dl>
+                            <table class="dish-table">
+                                <caption>Signature dishes</caption>
+                                <thead>
+                                    <tr><th scope="col">Dish</th><th scope="col">Price</th></tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>Ice Cappucino</td><td>RM 13.00</td></tr>
+                                <tr><td>Cabonara</td><td>RM 18.00</td></tr>
+                                <tr><td>Burnt Cheese cake</td><td>RM 16.50</td></tr>
+                                </tbody>
+                            </table>
+                            <div class="button-row">
+                                <a class="btn" href="reservation.html?restaurant=upstairs">Reserve a table</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="restaurant-card" id="talker" aria-labelledby="talker-title">
+                        <img src="images/restaurant5.jpg" alt="Talker Cafe and Chocolate Factory in SS13" width="800" height="520" loading="lazy">
+                        <div>
+                            <h2 id="talker-title">Talker Cafe & Chocolate Factory</h2>
+                            <p><span class="chip">Desserts</span><span class="chip">Halal</span></p>
+                            <p>SS13's go-to spot for rich brews, hearty bites and handcrafted chocolate treats, Talker Cafe and Chocolate Factory doubles as a working chocolate factory, so everything arrives fresh. Come for the food and coffee, stay for the irresistible desserts, and leave with a box of pralines. Affordable prices and a cosy interior make it popular with families and couples alike.</p>
+                            <dl class="facts">
+                                <div>
+                                    <dt>Cuisine type</dt>
+                                    <dd>Desserts (Halal)</dd>
+                                </div>
+                                <div>
+                                    <dt>Average price</dt>
+                                    <dd>RM 12 - RM 35 per person</dd>
+                                </div>
+                                <div>
+                                    <dt>Reservation deposit</dt>
+                                    <dd>RM 10.00</dd>
+                                </div>
+                                <div>
+                                    <dt>Best for</dt>
+                                    <dd>Family & dates</dd>
+                                </div>
+                                <div>
+                                    <dt>Located In</dt>
+                                    <dd>SS13</dd>
+                                </div>
+                            </dl>
+                            <table class="dish-table">
+                                <caption>Signature dishes</caption>
+                                <thead>
+                                    <tr><th scope="col">Dish</th><th scope="col">Price</th></tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>Ice Latte</td><td>RM 11.50</td></tr>
+                                <tr><td>Matcha Croissant</td><td>RM 18.00</td></tr>
+                                </tbody>
+                            </table>
+                            <div class="button-row">
+                                <a class="btn" href="reservation.html?restaurant=talker">Reserve a table</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="restaurant-card" id="pocha" aria-labelledby="pocha-title">
+                        <img src="images/restaurant6.jpg" alt="Ajooma Pocha Korean restaurant in SS15" width="800" height="520" loading="lazy">
+                        <div>
+                            <h2 id="pocha-title">Ajooma Pocha</h2>
+                            <p><span class="chip">Korean</span></p>
+                            <p>If you cannot decide what to eat in the vibrant SS15 area, Ajooma Pocha is one of its most underrated authentic Korean eateries. Run by a friendly Korean lady, the small pojangmacha-style restaurant serves genuine Korean comfort food, from bubbling budae jigae to fresh kimbap, while prices stay well within a student budget. Portions are generous, so it is best for simple dates and small gatherings.</p>
+                            <dl class="facts">
+                                <div>
+                                    <dt>Cuisine type</dt>
+                                    <dd>Korean</dd>
+                                </div>
+                                <div>
+                                    <dt>Average price</dt>
+                                    <dd>RM 15.90 - RM 46 per person</dd>
+                                </div>
+                                <div>
+                                    <dt>Reservation deposit</dt>
+                                    <dd>None</dd>
+                                </div>
+                                <div>
+                                    <dt>Best for</dt>
+                                    <dd>Small gatherings & dates</dd>
+                                </div>
+                                <div>
+                                    <dt>Located In</dt>
+                                    <dd>SS15</dd>
+                                </div>
+                            </dl>
+                            <table class="dish-table">
+                                <caption>Signature dishes</caption>
+                                <thead>
+                                    <tr><th scope="col">Dish</th><th scope="col">Price</th></tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>Bibimbap - chick/pork</td><td>RM 15.90</td></tr>
+                                <tr><td>Kimbap</td><td>RM 15.90</td></tr>
+                                <tr><td>Budae jigae - 2pax set</td><td>RM 55.00</td></tr>
+                                </tbody>
+                            </table>
+                            <div class="button-row">
+                                <a class="btn" href="reservation.html?restaurant=pocha">Reserve a table</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Side note: extra information that supports the listing -->
+            <aside class="page-section alt" aria-labelledby="notes-title">
+                <div class="container">
+                    <h2 id="notes-title">Good to know before you book</h2>
+                    <ul class="facts-list">
+                        <li><strong>Deposits</strong> are set by each restaurant and are deducted from your final bill. Ajooma Pocha does not ask for a deposit.</li>
+                        <li><strong>Dietary needs</strong> are marked as Halal, Vegetarian or Vegan. Contact the restaurant directly for allergies or strict requirements.</li>
+                        <li><strong>Not sure where to eat?</strong> Answer three questions on the <a href="recommend.html">recommendations page</a> and we will match you with the closest fits.</li>
+                        <li><strong>Opening hours</strong> and live table availability are handled by the restaurant once your reservation is confirmed.</li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+        <!-- ===== Site footer ===== -->
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-brand-header">
+                        <a href="index.html#top" class="footer-logo-link" aria-label="Gustio Home">
+                            <img src="images/logo.png" alt="Gustio logo" class="footer-logo" width="1250" height="1250">
+                        </a>
+                        <h2>GUSTIO</h2>
+                    </div>
+                    <p>Discover. Decide. Dine With JOY. A restaurant discovery and reservation platform for Malaysia.</p>
+                </div>
+                <div>
+                    <h2>Explore</h2>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="recommend.html">Recommendations</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:support@gustio.com">support@gustio.com</a></p>
+                    <p>Support Hour - 9:00 am to 9:00 pm</p>
+                </div>
+                <p class="footer-note">&copy; 2026 GUSTIO. A website for COS10005 Web Development, Assignment 2.</p>
+                </div>
+        </footer>
+    </body>
+</html>

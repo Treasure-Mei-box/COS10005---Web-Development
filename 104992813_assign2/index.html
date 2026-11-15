@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="GUSTIO helps families, couples, professionals and tourists discover restaurants, get recommendations and reserve a table online.">
+        <title>GUSTIO - Restaurant Discovery and Reservation with JOY</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <!-- Google Fonts preconnect for faster font rendering -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- One external stylesheet and one external script are shared by every page -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body id="top">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <!-- ===== Site header and main navigation (identical on every page) ===== -->
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="index.html#top">
+                    <img src="images/logo.png" alt="Gustio logo" width="1250" height="1250">
+                    <span>GUSTIO</span>
+                </a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+                <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="recommend.html">Recommendations</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+            <!-- Purpose of the platform -->
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="container hero-layout">
+                    <div class="hero-copy">
+                        <h1 id="hero-title"><span class="tagline">Discover. Decide. Dine with JOY</span> Find your perfect taste, without the guesswork</h1>
+                        <p class="page-intro">Explore top spots, get picks that match your cravings, and book a table in minutes.</p>
+                        <div class="button-row">
+                            <a class="btn" href="restaurants.html">Browse restaurants</a>
+                            <a class="btn btn-secondary" href="recommend.html">Get a recommendation</a>
+                        </div>
+                    </div>
+                    <figure class="hero-visual">
+                        <img id="hero-rotating-image" src="images/index/sushi.jpg" alt="Fresh sushi platter with assorted rolls and sashimi" width="800" height="520">
+                    </figure>
+                </div>
+            </section>
+            <!-- Photo highlights -->
+            <section class="page-section" aria-labelledby="gallery-title">
+                <div class="container">
+                    <h2 id="gallery-title">A taste of what awaits</h2>
+                    <p class="page-intro">Real dish photos to tempt your next meal out.</p>
+                    <div class="photo-grid">
+                        <figure class="photo-tile">
+                            <img src="images/index/shawama.jpg" alt="Freshly prepared shawarma wrap" width="800" height="520" loading="lazy">
+                            <figcaption>Shawarma Wrap</figcaption>
+                        </figure>
+                        <figure class="photo-tile">
+                            <img src="images/index/lambrice.jpg" alt="Aromatic lamb rice dish" width="800" height="520" loading="lazy">
+                            <figcaption>Lamb Rice</figcaption>
+                        </figure>
+                        <figure class="photo-tile">
+                            <img src="images/index/ramen.jpg" alt="Steaming bowl of ramen" width="800" height="520" loading="lazy">
+                            <figcaption>Ramen Bowl</figcaption>
+                        </figure>
+                        <figure class="photo-tile">
+                            <img src="images/index/kfood.jpg" alt="Korean comfort food spread" width="800" height="520" loading="lazy">
+                            <figcaption>Korean Favourites</figcaption>
+                        </figure>
+                        <figure class="photo-tile">
+                            <img src="images/index/strawberry.jpg" alt="Strawberry dessert treat" width="800" height="520" loading="lazy">
+                            <figcaption>Sweet Treats</figcaption>
+                        </figure>
+                        <figure class="photo-tile">
+                            <img src="images/index/latte.jpg" alt="Freshly made cafe latte" width="800" height="520" loading="lazy">
+                            <figcaption>Cafe Latte</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- Purpose and values of the platform -->
+            <section class="page-section" aria-labelledby="values-title">
+                <div class="container">
+                    <h2 id="values-title">Why people choose GUSTIO</h2>
+                    <p class="page-intro">Choosing where to eat should be the easy part of a meal out. GUSTIO brings restaurant information, personalised suggestions and online booking together in one friendly place, built around four values.</p>
+                    <div class="card-grid four">
+                        <article class="card">
+                            <h3>Convenience</h3>
+                            <p>Search, compare and book in minutes, with no phone calls and no waiting on hold.</p>
+                        </article>
+                        <article class="card">
+                            <h3>Variety</h3>
+                            <p>From halal classics to Japanese counters, Korean comfort food and dessert cafes.</p>
+                        </article>
+                        <article class="card">
+                            <h3>Accessibility</h3>
+                            <p>Clear text, strong colour contrast and a layout that works on any screen.</p>
+                        </article>
+                        <article class="card">
+                            <h3>Dining experience</h3>
+                            <p>Honest descriptions, real dish photos and transparent deposits.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Target users -->
+            <section class="page-section alt" aria-labelledby="users-title">
+                <div class="container">
+                    <h2 id="users-title">Made for every diner</h2>
+                    <div class="card-grid four">
+                    <article class="card">
+                        <h3>Families</h3>
+                        <p>Big tables, sharing platters, and kid-friendly picks.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Couples</h3>
+                        <p>Cozy spots for date nights and celebrations.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Professionals</h3>
+                        <p>Comfortable venues for meetings and team meals.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Tourists</h3>
+                        <p>Local favourites with clear halal and dietary info.</p>
+                    </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Services -->
+            <section class="page-section" aria-labelledby="services-title">
+                <div class="container">
+                    <h2 id="services-title">Plan your meal in 3 steps</h2>
+                    <div class="card-grid four">
+                    <article class="card">
+                        <h3>Discover</h3>
+                        <p>Browse menus, photos, prices, and locations.</p>
+                        <p><a href="restaurants.html">Browse restaurants</a></p>
+                    </article>
+                    <article class="card">
+                        <h3>Get matched</h3>
+                        <p>Share your diet, budget, and occasion for tailored picks.</p>
+                        <p><a href="recommend.html">Get recommendations</a></p>
+                    </article>
+                    <article class="card">
+                        <h3>Reserve</h3>
+                        <p>Book your table online in just a few clicks.</p>
+                        <p><a href="reservation.html">Make a reservation</a></p>
+                    </article>
+                    <article class="card">
+                        <h3>Save preferences</h3>
+                        <p>Create a free account for faster bookings next time.</p>
+                        <p><a href="register.html">Register now</a></p>
+                    </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Featured restaurants: visitors can start a reservation straight from the home page -->
+            <section class="page-section alt" aria-labelledby="featured-title">
+                <div class="container">
+                    <h2 id="featured-title">Featured restaurants</h2>
+                    <p class="page-intro">Pick a restaurant and go straight to the reservation form with it already selected.</p>
+                    <div class="card-grid">
+                    <article class="card">
+                        <img src="images/restaurant1.jpg" alt="ORCHID HOUSE Restaurant in Kampung Baru, KLCC" width="800" height="520" loading="lazy">
+                        <h3>ORCHID Restaurant</h3>
+                        <p><span class="chip">Arabic (Halal)</span><span class="chip">RM 25 - RM 45 per person</span></p>
+                        <p>Reservation deposit: <strong>RM 20.00</strong></p>
+                        <div class="button-row">
+                            <a class="btn" href="reservation.html?restaurant=orchid">Reserve a table</a>
+                            <a class="btn btn-secondary" href="restaurants.html#orchid">View details</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="images/restaurant2.jpg" alt="Nando's flame-grilled chicken at the Sunway Pyramid branch" width="800" height="520" loading="lazy">
+                        <h3>Nando's</h3>
+                        <p><span class="chip">Malaysian Food (Halal)</span><span class="chip">RM 22 - RM 55 per person</span></p>
+                        <p>Reservation deposit: <strong>RM 20.00</strong></p>
+                        <div class="button-row">
+                            <a class="btn" href="reservation.html?restaurant=nando">Reserve a table</a>
+                            <a class="btn btn-secondary" href="restaurants.html#nando">View details</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="images/restaurant3.jpg" alt="Sushi Hiro restaurant frontage at USJ Taipan" width="800" height="520" loading="lazy">
+                        <h3>Sushi Hiro</h3>
+                        <p><span class="chip">Japanese (Non-Halal) </span><span class="chip">RM 25 - RM 90 per person</span></p>
+                        <p>Reservation deposit: <strong>RM 30.00</strong></p>
+                        <div class="button-row">
+                            <a class="btn" href="reservation.html?restaurant=hiro">Reserve a table</a>
+                            <a class="btn btn-secondary" href="restaurants.html#hiro">View details</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action -->
+            <section class="cta-banner" aria-labelledby="cta-title">
+                <div class="container">
+                    <h2 id="cta-title">Ready to start your dining trail?</h2>
+                    <p>Create a free account to save your preferences and book faster.</p>
+                    <a class="btn" href="register.html">Create an account</a>
+                </div>
+            </section>
+        </main>
+        <!-- ===== Site footer ===== -->
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-brand-header">
+                        <a href="index.html#top" class="footer-logo-link" aria-label="Gustio Home">
+                            <img src="images/logo.png" alt="Gustio logo" class="footer-logo" width="1250" height="1250">
+                        </a>
+                        <h2>GUSTIO</h2>
+                    </div>
+                    <p>Discover. Decide. Dine With JOY. A restaurant discovery and reservation platform for Malaysia.</p>
+                </div>
+                <div>
+                    <h2>Explore</h2>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="recommend.html">Recommendations</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:support@gustio.com">support@gustio.com</a></p>
+                    <p>Support Hour - 9:00 am to 9:00 pm</p>
+                </div>
+                <p class="footer-note">&copy; 2026 GUSTIO. A website for COS10005 Web Development, Assignment 2. Image references are listed in Readme.txt.</p>
+            </div>
+        </footer>
+    </body>
+</html>
