@@ -6,7 +6,7 @@ COS10005 Web Development - Assignment 2 (August 2026)
 Student name : Yadanar Theint
 Student ID   : 104992813
 Mercury URL  : http://mercury.swin.edu.au/s104992813/cos10005/assignment2/index.html
-GitHub repo  : 
+GitHub repo  : https://github.com/Treasure-Mei-box/COS10005---Web-Development.git
                (the repository is public / the marker has been given access)
 
 
